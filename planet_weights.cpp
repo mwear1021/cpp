@@ -18,7 +18,7 @@ int main() {
   std::string answer; // allows input of a string for the user to choose a planet
 
   // Asking the user to input their weight
-  std::cout << "Enter your weight in pounds: ";
+  std::cout << "Enter your weight in pounds\n> ";
   std::cin >> weightE;
 
   // Weight conversions
@@ -30,23 +30,33 @@ int main() {
   weightNep = weightE * 1.14;
   weightPlu = weightE * 0.65;
   
-  std::cout << "Which planet do you want to see how much you weigh on (Enter it with a capital first letter)?\n";
-  std::cin >> answer;
+  
 
-  if (answer == "Mercury") {
-    std::cout << "Your weight on Mercury is " << weightMerc << " pounds\n";
-} else if (answer == "Mars") {
-    std::cout << "Your weight on Mars is " << weightMars << " pounds\n";
-} else if (answer == "Jupiter") {
-    std::cout << "Your weight on Jupiter is " << weightJup << " pounds\n";
-} else if (answer == "Saturn") {
-    std::cout << "Your weight on Saturn is " << weightSat << " pounds\n";
-} else if (answer == "Uranus") {
-    std::cout << "Your weight on Uranus is " << weightUra << " pounds\n";
-} else if (answer == "Neptune") {
-    std::cout << "Your weight on Neptune is " << weightNep << " pounds\n";
-} else if (answer == "Pluto") {
-    std::cout << "Your weight on Pluto is " << weightPlu << " pounds\n";
-}
+  while (answer != "Exit") {
 
+    std::cout << "Which planet do you want to see how much you weigh on (Enter it with a capital first letter)? Type 'Exit' to quit\n> ";
+    std::cin >> answer;
+
+    if (answer == "Exit") {
+        break;
+    } else if (answer == "Mercury") {
+        std::cout << "Your weight on Mercury is " << weightMerc << " pounds\n";
+    } else if (answer == "Mars") {
+        std::cout << "Your weight on Mars is " << weightMars << " pounds\n";
+    } else if (answer == "Jupiter") {
+        std::cout << "Your weight on Jupiter is " << weightJup << " pounds\n";
+    } else if (answer == "Saturn") {
+        std::cout << "Your weight on Saturn is " << weightSat << " pounds\n";
+    } else if (answer == "Uranus") {
+        std::cout << "Your weight on Uranus is " << weightUra << " pounds\n";
+    } else if (answer == "Neptune") {
+        std::cout << "Your weight on Neptune is " << weightNep << " pounds\n";
+    } else if (answer == "Pluto") {
+        std::cout << "Your weight on Pluto is " << weightPlu << " pounds\n";
+    } else {
+        std::cout << "Invalid Input. Please resubmit a proper planet (excluding Earth)\n";
+    }
+
+  }
+  
 }
