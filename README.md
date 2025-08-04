@@ -5,7 +5,7 @@ The goal is to build a solid foundation before moving into larger projects or ad
 
 ---
 
-## 📚 Topics Covered
+## Topics Covered
 
 This repo will contain practice programs on:
 
@@ -35,7 +35,7 @@ This repo will contain practice programs on:
 
 ---
 
-## 🛠 Tools & Setup
+## Tools & Setup
 
 To compile and run the programs in this repository, you can use any modern C++ compiler such as:
 
