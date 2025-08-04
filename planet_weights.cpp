@@ -1,5 +1,5 @@
 /* This program takes a user-inputted weight in pounds and converts it to see what 
-the user would weigh on a planet of their choosing (no input validation, just a simple exercise */
+the user would weigh on a planet of their choosing (no input validation, just a simple exercise) */
 
 #include <iostream>
 #include <string>
